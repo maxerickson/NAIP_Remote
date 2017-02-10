@@ -8,7 +8,9 @@ head='''<!DOCTYPE html>
 <body><p>Click below to add a layer to JOSM. Remote Control
 must be enabled and setup for https.</p>
 <p>To save a layer to the JOSM imagery menu, right click the 
-layer in the "Layers" window and select "Set WMS Bookmark".</p>
+layer in the JOSM "Layers" window and select "Set WMS Bookmark".</p>
+<p>Visit <a href="https://gis.apfo.usda.gov/arcgis/rest/services/NAIP">https://gis.apfo.usda.gov/arcgis/rest/services/NAIP</a>
+for more information about a given layer.</p>
 '''
 
 foot='''
@@ -52,6 +54,6 @@ with open("slugs") as f:
 		else:
 			s+=linktmpl.format(slug=line)
 s+=foot
-with open("NAIPLinks.html", "w") as f:
+with open("docs/index.html", "w") as f:
 	f.write(s)
 
