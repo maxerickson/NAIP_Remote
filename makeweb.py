@@ -44,7 +44,7 @@ for(var i=0; i<links.length; i++){
 </body>
 </html>'''
 
-linktmpl='<a class="im" href="https://127.0.0.1:8112/imagery?title={slug}&type=wms&url=https://gis.apfo.usda.gov/arcgis/services/NAIP/{slug}/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=&STYLES=&SRS={{proj}}&WIDTH={{width}}&HEIGHT={{height}}&BBOX={{bbox}}">{slug}</a></br>'
+linktmpl='<a class="im" href="https://127.0.0.1:8112/imagery?title={slug}&type=wms&url=https://gis.apfo.usda.gov/arcgis/services/NAIP/{slug}/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={{proj}}&WIDTH={{width}}&HEIGHT={{height}}&BBOX={{bbox}}">{slug}</a></br>'
 
 s=head
 with open("slugs") as f:
